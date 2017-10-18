@@ -1,0 +1,17 @@
+- Title splashscreen?
+
+- Session
+
+-- About Me
+--- Bio
+--- Education
+--- Interests
+--- Resume
+
+-- Projects
+--- Side Bar for project selection
+--- Diplay area w/ src/picture toggle
+---- Source display linked to github
+---- Images of project and possible links/embedded deployment
+
+-- Media links
