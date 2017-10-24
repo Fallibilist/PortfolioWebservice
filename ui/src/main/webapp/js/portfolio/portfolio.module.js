@@ -4,18 +4,15 @@
 import apiUrl from './api.url'
 
 import session from './session/session.module'
-
-import sessionAbout from './session/about/about.module'
-import sessionAboutBio from './session/about/bio/bio.module'
-import sessionAboutEducation from './session/about/education/education.module'
-import sessionAboutInterests from './session/about/interests/interests.module'
-import sessionAboutResume from './session/about/resume/resume.module'
-
-import sessionProjects from './session/projects/projects.module'
-import sessionProjectsContent from './session/projects/content/content.module'
-import sessionProjectsInfo from './session/projects/info/info.module'
-
-import sessionLinks from './session/links/links.module'
+  import sessionAbout from './session/about/about.module'
+    import sessionAboutBio from './session/about/bio/bio.module'
+    import sessionAboutEducation from './session/about/education/education.module'
+    import sessionAboutInterests from './session/about/interests/interests.module'
+    import sessionAboutResume from './session/about/resume/resume.module'
+  import sessionProjects from './session/projects/projects.module'
+    import sessionProjectsContent from './session/projects/content/content.module'
+    import sessionProjectsInfo from './session/projects/info/info.module'
+  import sessionLinks from './session/links/links.module'
 
 /**
  * Exports the primary module which defines all states
@@ -23,7 +20,18 @@ import sessionLinks from './session/links/links.module'
 export default
 angular
   .module('portfolio', [
-    'ui.router'
+    'ui.router',
+
+    session,
+    sessionAbout,
+    sessionAboutBio,
+    sessionAboutEducation,
+    sessionAboutInterests,
+    sessionAboutResume,
+    sessionProjects,
+    sessionProjectsContent,
+    sessionProjectsInfo,
+    sessionLinks
   ])
   .config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {

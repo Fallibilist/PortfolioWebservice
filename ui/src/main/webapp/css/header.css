@@ -1,0 +1,22 @@
+/* The panel containing header banner and buttons */
+.sessionHeaderPanel {
+    height: 200px;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessionBanner {
+
+}
+
+.sessionButtonPanel {
+
+}
+
+.sessionButton {
+
+}
