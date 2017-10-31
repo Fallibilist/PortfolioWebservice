@@ -1,0 +1,21 @@
+window.jQuery = require('jquery')
+window.angular = require('angular')
+
+require('angular-aria')
+require('angular-animate')
+require('angular-material')
+require('angular-messages')
+require('angular-ui-router')
+
+require('angular-material/angular-material.css')
+
+require("../css/general.css")
+require("../css/session/header.css")
+require("../css/session/about/about.css")
+require("../css/session/about/education.css")
+require("../css/session/about/bio.css")
+require("../css/session/projects/projects.css")
+require("../css/session/projects/content.css")
+require("../css/session/projects/source.css")
+require("../css/session/projects/info.css")
+require("../css/session/links/links.css")

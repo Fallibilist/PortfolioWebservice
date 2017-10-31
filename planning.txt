@@ -15,3 +15,8 @@
 ---- Images of project and possible links/embedded deployment
 
 -- Media links
+
+TODO:
+ - Determine size of header and buttonPanel, change css numbers in all child elements to reflect change
+ - Determine size of logos and pictures and modify minimum sizes to reflect change
+ - Integrate lesscss into project/webpack including installing less via npm and using .less extensions for css files

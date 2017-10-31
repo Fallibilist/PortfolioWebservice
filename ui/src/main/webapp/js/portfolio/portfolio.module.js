@@ -1,8 +1,6 @@
 /**
  * Imports modules containing state information
  */
-import apiUrl from './api.url'
-
 import session from './session/session.module'
   import sessionAbout from './session/about/about.module'
     import sessionAboutBio from './session/about/bio/bio.module'
@@ -11,8 +9,11 @@ import session from './session/session.module'
     import sessionAboutResume from './session/about/resume/resume.module'
   import sessionProjects from './session/projects/projects.module'
     import sessionProjectsContent from './session/projects/content/content.module'
+    import sessionProjectsSource from './session/projects/source/source.module'
     import sessionProjectsInfo from './session/projects/info/info.module'
   import sessionLinks from './session/links/links.module'
+  
+  import apiUrl from './api.url'  
 
 /**
  * Exports the primary module which defines all states
@@ -30,6 +31,7 @@ angular
     sessionAboutResume,
     sessionProjects,
     sessionProjectsContent,
+    sessionProjectsSource,
     sessionProjectsInfo,
     sessionLinks
   ])
@@ -87,6 +89,12 @@ angular
         component: 'contentComponent'
       }
       
+      const sourceState = {
+        name: 'session.projects.source',
+        url: '/source',
+        component: 'sourceComponent'
+      }
+      
       const infoState = {
         name: 'session.projects.info',
         url: '/info',
@@ -107,6 +115,7 @@ angular
                         .state(resumeState)
                       .state(projectsState)
                         .state(contentState)
+                        .state(sourceState)
                         .state(infoState)
                       .state(linksState)
 

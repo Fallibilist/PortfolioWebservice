@@ -1,0 +1,48 @@
+/* The panel containing education entries */
+.educationPanel {
+    /* 100vh - session header height */
+    height: calc(100vh - 200px);
+    /* 100vw - button panel width */
+    width: calc(100vw - 200px);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.educationEntry {
+    /* 100vh - header / number of entries */
+    height: calc((100vh - 200px) / 3);
+    /* Minimum height set to size of logo */
+    min-height: 200px;    
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.entryTimePeriod {
+    height: 100%;
+    width: 150px;
+
+    /* Temporary styling for testing purposes */
+    background: rgb(139, 238, 139);
+}
+
+.entryText {
+    height: 100%;
+    /* 100vw - button panel - time period - logo */
+    width: calc((((100vw - 200px) - 150px) - 200px));
+
+    /* Temporary styling for testing purposes */
+    background: rgb(235, 186, 96);
+}
+
+.entryLogo {
+    height: 100%;
+    /* Logo height */
+    width: 200px;
+
+    /* Temporary styling for testing purposes */
+    background: rgb(154, 162, 233);
+}
+

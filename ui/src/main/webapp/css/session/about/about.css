@@ -1,0 +1,26 @@
+/* The panel containing about buttons and nested state display */
+.aboutPanel {
+    height: calc(100vh - 200px);
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* The panel containing the about buttons */
+.aboutButtonPanel {
+    height: calc(100vh - 200px);
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutButton {
+    height: calc((100vh - 200px) / 4);
+    width: 200px;
+
+    /* Temporary styling for testing purposes */
+    background: rgb(1, 54, 1);
+    border: rgb(209, 141, 16);
+}
