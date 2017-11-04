@@ -1,7 +1,6 @@
 /* The panel containing bio header and content */
 .bioPanel {
-    /* 100vh - session header height */
-    height: calc(100vh - 200px);
+    height: 100%;
     /* 100vw - button panel width */
     width: calc(100vw - 200px);
 
@@ -11,37 +10,37 @@
 
 /* The panel containing the bio picture and title */
 .bioHeaderPanel {
-    height: 200px;
-    /* 100vw - button panel width */
-    width: calc(100vw - 200px);
+    height: 150px;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
 }
 
 .bioHeaderPicture {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 
     /* Temporary styling for testing purposes */
-    background: rgb(1, 54, 1);
+    background: rgb(84, 95, 100);
 }
 
 .bioHeaderTitle {
-    height: 200px;
-    /* 100vw - button panel width - picture width */
-    width: calc((100vw - 200px) - 200px);
+    height: 100%;
+    width: calc(100% - 150px);
 
     /* Temporary styling for testing purposes */
-    background: rgb(1, 54, 1);
+    background: rgb(179, 179, 211);
 }
 
 .bioTextContent {
-    /* 100vh - session header height - bio header height*/
-    height: calc((100vh - 200px) - 200px);
-    /* 100vw - button panel width */
-    width: calc(100vw - 200px);
+    height: calc(100% - 150px);
+    width: 100%;
 
     /* Temporary styling for testing purposes */
-    background: rgb(105, 201, 105);
+    background: rgb(241, 191, 191);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
