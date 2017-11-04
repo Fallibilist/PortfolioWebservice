@@ -3,10 +3,6 @@
  */
 import session from './session/session.module'
   import sessionAbout from './session/about/about.module'
-    import sessionAboutBio from './session/about/bio/bio.module'
-    import sessionAboutEducation from './session/about/education/education.module'
-    import sessionAboutInterests from './session/about/interests/interests.module'
-    import sessionAboutResume from './session/about/resume/resume.module'
   import sessionProjects from './session/projects/projects.module'
     import sessionProjectsContent from './session/projects/content/content.module'
     import sessionProjectsSource from './session/projects/source/source.module'
@@ -25,10 +21,6 @@ angular
 
     session,
     sessionAbout,
-    sessionAboutBio,
-    sessionAboutEducation,
-    sessionAboutInterests,
-    sessionAboutResume,
     sessionProjects,
     sessionProjectsContent,
     sessionProjectsSource,
@@ -46,34 +38,9 @@ angular
       }
 
       const aboutState = {
-        abstract: true,
         name: 'session.about',
         url: '/about',
         component: 'aboutComponent'
-      }
-
-      const bioState = {
-        name: 'session.about.bio',
-        url: '/bio',
-        component: 'bioComponent'
-      }
-
-      const educationState = {
-        name: 'session.about.education',
-        url: '/education',
-        component: 'educationComponent'
-      }
-
-      const interestsState = {
-        name: 'session.about.interests',
-        url: '/interests',
-        component: 'interestsComponent'
-      }
-
-      const resumeState = {
-        name: 'session.about.resume',
-        url: '/resume',
-        component: 'resumeComponent'
       }
 
       const projectsState = {
@@ -109,17 +76,13 @@ angular
 
       $stateProvider.state(sessionState)
                       .state(aboutState)
-                        .state(bioState)
-                        .state(educationState)
-                        .state(interestsState)
-                        .state(resumeState)
                       .state(projectsState)
                         .state(contentState)
                         .state(sourceState)
                         .state(infoState)
                       .state(linksState)
 
-      $urlRouterProvider.otherwise('/session/about/bio')
+      $urlRouterProvider.otherwise('/session/about')
     }
   ])
   .constant('apiUrl', apiUrl)

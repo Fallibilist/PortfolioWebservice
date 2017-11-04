@@ -1,0 +1,57 @@
+.aboutPanel {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutInnerPanel {
+    height: calc(100% - 160px);
+    width: calc(100% - 160px);
+
+    margin: 40px 80px;
+    padding-top: 40px;
+
+    background: rgba(255, 241, 241, 0.048);
+    border-radius: 10px;
+}
+
+.bioTitlePanel {
+    height: 150px;
+    width: calc(100% - 40px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bioPortrait {
+    height: 100%;
+    width: 150px;
+
+    background-image: url("/img/profile.jpg");
+    background-size: 150px;
+    border-radius: 5px;
+}
+
+.bioTitle {
+    height: 100%;
+    width: calc(100% / 2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.bioName {
+    font-size: 60px;
+}
+
+.bioOccupation {
+    font-size: 20px;
+}
