@@ -1,5 +1,16 @@
+@font-face {
+    font-family: "Meath";
+    src: url("/fonts/MeathFLF.ttf");
+}
+
+@font-face {
+    font-family: "Rocko";
+    src: url("/fonts/RockoFLF.ttf");
+} 
+
 body {
     margin: 0px;
 
     background: linear-gradient(rgba(0, 0, 0, 0.966), rgba(0, 0, 0, 0.753));
+    
 }

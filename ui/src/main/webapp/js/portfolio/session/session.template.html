@@ -1,19 +1,18 @@
-<div class="sessionHeaderPanel">
-    <div class="sessionTitle">
-        Gregory Hill
+<div class="sessionPanel">
+    <div class="sessionHeaderPanel">
+        <div class="sessionTitle">
+            Greg Hill
+        </div>
+        <div class="sessionButtonPanel">
+            <div class="sessionButton" ui-sref="session.about">
+                About
+            </div>
+            <div class="sessionButton" ui-sref="session.projects.content">
+                Projects
+            </div>
+        </div>
     </div>
-    <div class="sessionButtonPanel">
-        <div class="sessionButton" ui-sref="session.about">
-            About
-        </div>
-        <div class="sessionButton" ui-sref="session.projects.content">
-            Projects
-        </div>
-        <div class="sessionButton" ui-sref="session.links">
-            Links
-        </div>
+    <div class="sessionContentPanel">
+        <ui-view></ui-view>
     </div>
-</div>
-<div class="sessionContentPanel">
-    <ui-view></ui-view>
 </div>

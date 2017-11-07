@@ -7,7 +7,6 @@ import session from './session/session.module'
     import sessionProjectsContent from './session/projects/content/content.module'
     import sessionProjectsSource from './session/projects/source/source.module'
     import sessionProjectsInfo from './session/projects/info/info.module'
-  import sessionLinks from './session/links/links.module'
   
   import apiUrl from './api.url'  
 
@@ -24,8 +23,7 @@ angular
     sessionProjects,
     sessionProjectsContent,
     sessionProjectsSource,
-    sessionProjectsInfo,
-    sessionLinks
+    sessionProjectsInfo
   ])
   .config(['$stateProvider', '$urlRouterProvider',
     function ($stateProvider, $urlRouterProvider) {
@@ -68,19 +66,12 @@ angular
         component: 'infoComponent'
       }
 
-      const linksState = {
-        name: 'session.links',
-        url: '/links',
-        component: 'linksComponent'
-      }
-
       $stateProvider.state(sessionState)
                       .state(aboutState)
                       .state(projectsState)
                         .state(contentState)
                         .state(sourceState)
                         .state(infoState)
-                      .state(linksState)
 
       $urlRouterProvider.otherwise('/session/about')
     }
